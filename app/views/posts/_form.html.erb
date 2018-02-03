@@ -1,0 +1,24 @@
+<%= simple_form_for @post do |f| %>
+        <% if @post.errors.any? %>
+                <div id="error_explanation">
+                        <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+                        <ul>
+                        <% @post.errors.full_messages.each do |message| %>
+                                <li><%= message %></li>
+                        <% end %>
+                        </ul>
+                </div>
+        <% end %>
+
+        <div class="input-field">
+                <%= f.input :title ,:label_html => { :class => 'active'}%>
+        </div>
+        <div class="input-field">
+                <%= f.input :description, :label_html => { :class => 'active' } %>
+        </div>
+        <div class="input-field">
+                <%= f.input :tag_id, as: :select, placeholder:"what relates to your post the most?", collection: Tag.all%>
+        </div>
+        <%= f.button :submit ,:value=>"Post",:class=>"btn right"%>
+<% end %>
