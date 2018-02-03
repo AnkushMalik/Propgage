@@ -31,9 +31,9 @@ class PostsController < ApplicationController
     respond_to do |format|
       if @post.save
         if params[:pics]
-          params[:pics].each { |pic|
+          params[:pics].each do |pic|
             @post.pictures.create(pic: pic)
-          }
+          end
         end
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
@@ -50,9 +50,9 @@ class PostsController < ApplicationController
     respond_to do |format|
       if @post.update(post_params)
         if params[:pics]
-          params[:pics].each { |pic|
+          params[:pics].each do |pic|
             @post.pictures.create(pic: pic)
-          }
+          end
         end
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @post }
