@@ -14,4 +14,7 @@
 //= require rails-ujs
 //= require jquery.slick
 //= require turbolinks
+//= require bootstrap
+//= require material
+//= require material-kit
 //= require_tree .
