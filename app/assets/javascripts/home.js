@@ -27,7 +27,6 @@ $(document).ready(function(){
                 $(this).text(Math.ceil(now));
             }
         });
-        
     });
 
 
@@ -103,5 +102,10 @@ $(document).ready(function(){
         });
 
     };
+
     clSlickSlider();
+
+    $('.carousel').carousel({
+        interval: 4000
+    });
 });

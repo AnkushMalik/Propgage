@@ -13,8 +13,11 @@
 //= require jquery
 //= require rails-ujs
 //= require jquery.slick
+//= require jqueryVisible
 //= require turbolinks
 //= require bootstrap
 //= require material
 //= require material-kit
+//= require Chart.bundle
+//= require chartkick
 //= require_tree .
