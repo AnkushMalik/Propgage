@@ -1,42 +1,24 @@
-<%= form_with(model: post, local: true) do |form| %>
-  <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+<%= simple_form_for @post do |f| %>
+        <% if @post.errors.any? %>
+                <div id="error_explanation">
+                        <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-      <ul>
-      <% post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+                        <ul>
+                        <% @post.errors.full_messages.each do |message| %>
+                                <li><%= message %></li>
+                        <% end %>
+                        </ul>
+                </div>
+        <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :post_description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :tag_id %>
-    <%= form.text_field :tag_id, id: :post_tag_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, id: :post_user_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.check_box :status, id: :post_status %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+        <div class="input-field">
+                <%= f.input :title ,:label_html => { :class => 'active'}%>
+        </div>
+        <div class="input-field">
+                <%= f.input :description, :label_html => { :class => 'active' } %>
+        </div>
+        <div class="input-field">
+                <%= f.input :tag_id, as: :select, placeholder:"what relates to your post the most?", collection: Tag.all%>
+        </div>
+        <%= f.button :submit ,:value=>"Post",:class=>"btn right"%>
 <% end %>
