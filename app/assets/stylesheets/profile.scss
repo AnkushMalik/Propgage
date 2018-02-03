@@ -37,30 +37,24 @@
 		color: $secondary-color;
 		display: block;
 		font-weight: bold;
+		text-align: left;
 	}
 	.post-expand{
 		flex: 1;
 	}
 	.post-desc{
 		color: $primary-text-color;
+		line-height: 2;
+		margin: 10px auto;
 	}
-	.post-carousel{
-		width: 100%;
-		height: auto;
-		margin: auto;
+	//carousel
+	#post-carousel{
 		.carousel-inner{
-			display: flex;
-			.carousel-item{
-				width: 80%;
-				transition: all 0.3s cubic-bezier(0,.53,.03,1.7);
-				margin: auto;
-			}
-		}
-		.carousel-control-prev, .carousel-control-next{
-			.fa{
-				font-size: 3em;
-				font-weight: 900;
-				color: $secondary-color;
+			.item{
+				img{
+					width: 100%;
+					max-height: 300px;
+				}
 			}
 		}
 	}

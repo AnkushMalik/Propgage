@@ -1,4 +1,4 @@
-<div class="container-fluid" style="background: #f1f1f1">
+<div class="container-fluid" style="background: #f1f1f1; height: 100%; width: 100%;">
 
 	<div class="row">
 		<div class="col-lg-12 img-cover">
@@ -48,34 +48,7 @@
 							<div class="tab-pane active" id="feeds">
 								
 								<!-- post -->
-								<div class="card post">
-									<div class="content">
-										<div class="row" style="display: flex;">
-											<img src="http://via.placeholder.com/40x40" alt="post-img-thumb" class="post-img-thumb">
-											
-											<h5 class="post-heading">Ankush Malik</h5>
-											
-											<div class="post-expand"><a class="fa fa-ellipsis-h" href="#post"></a></div>
-										</div>
-										<div class="row post-desc">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eos enim tempore temporibus, at repellendus.
-										</div>
-
-										<div class="row">
-											<!-- carousel -->
-
-
-										</div>
-
-										<div class="row">
-											<div class="post-btn-group btn-group" role="group" aria-label="Basic example">
-											  <button type="button" class="btn btn-default"><span class="fa fa-eye"></span> 434</button>
-											  <button type="button" class="btn btn-primary"><i class="fa fa-inr"></i> bid</button>
-											  <button type="button" class="btn btn-secondary"><i class="fa fa-share-alt"></i> Share</button>
-											</div>
-										</div>
-									</div>
-								</div>	
+								<%= render "post" %>
 
 							</div>
 							<div class="tab-pane" id="stats">
