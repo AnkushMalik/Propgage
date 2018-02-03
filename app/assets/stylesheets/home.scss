@@ -2,117 +2,120 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// $front-section-height: 950px;
+//shivam css
 
-// .overlay{
-// 	position: absolute;
-// 	top: 0;
-// 	bottom: 0;
-// 	width: 100%;
-// 	min-height: $front-section-height;
-// 	height:  90vh;
-// 	@include tablet{
-// 		min-height: 750px;
-// 	}
-// 	@include desktop{
-// 		min-height: 780px;
-// 	}
-// 	background: rgba(0, 0, 0, 0.8);
-// }
-// .intro-section{
-// 	height:  90vh;
-// 	min-height: $front-section-height;
-// 	@include tablet{
-// 		min-height: 750px;
-// 	}
-// 	@include desktop{
-// 		min-height: 780px;
-// 	}
-// 	background: black;
-// 	color: white;
-// 	background-image: url('/assets/hero-bg-2.png');
-// 	background-repeat: no-repeat;
-//     background-attachment: fixed;
-//     background-position: fill;
-//     background-size: cover;
-//     filter: blur(100%) 
-// }
+$front-section-height: 950px;
 
-// .navbar.navbar-transparent{
-// 	.navbar-header{
-// 		.navbar-brand{
-// 			font-weight: 900;
-// 			font-size: 3.5rem;
-// 		}
-// 	}
-// 	.nav.navbar-nav{
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	min-height: $front-section-height;
+	height:  90vh;
+	@include tablet{
+		min-height: 750px;
+	}
+	@include desktop{
+		min-height: 780px;
+	}
+	background: rgba(0, 0, 0, 0.8);
+}
+.intro-section{
+	height:  90vh;
+	min-height: $front-section-height;
+	@include tablet{
+		min-height: 750px;
+	}
+	@include desktop{
+		min-height: 780px;
+	}
+	background: black;
+	color: white;
+	background-image: url('/assets/hero-bg-2.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fill;
+    background-size: cover;
+    filter: blur(100%) 
+}
 
-// 		.active{
-// 			a{
-// 				background: none;
-// 			}
-// 		}
+.navbar.navbar-transparent{
+	.navbar-header{
+		.navbar-brand{
+			font-weight: 900;
+			font-size: 3.5rem;
+		}
+	}
+	.nav.navbar-nav{
 
-// 		li{
-// 			padding-bottom: 5px;
-// 			font-size: 1.5em;
-// 			&:hover{
-// 				border-bottom: 5px solid $primary-color;
-// 				padding-bottom: 0px;
-// 				transition: border-bottom 0.2s ease-in-out;
-// 			}
-// 		}
-// 	}
-// }
+		.active{
+			a{
+				background: none;
+			}
+		}
 
-// .intro{
-// 	padding-top: 5%;
-// 	position: relative;
-// 	.intro-small-heading{
-// 		font-size: 2em;
-// 	}
-// 	h2{
-// 		font-weight: 900;
-// 		font-size: 4.6rem;
-// 		margin-bottom: 4rem;
-// 	}
-// }
+		li{
+			padding-bottom: 5px;
+			font-size: 1.5em;
+			&:hover{
+				border-bottom: 5px solid $primary-color;
+				padding-bottom: 0px;
+				transition: border-bottom 0.2s ease-in-out;
+			}
+		}
+	}
+}
 
-// .btn-theme{
-// 	background: transparent;
-// 	box-shadow: none;
-// 	font-weight: 600;
-// 	font-size: 1.5rem;
-// 	border: 0.2rem solid white;
-// 	&:hover{
-// 		background: white;
-// 		color: black;
-// 		transition: all 0.5s ease-in-out;
-// 	}
-// }
+.intro{
+	padding-top: 5%;
+	position: relative;
+	.intro-small-heading{
+		font-size: 2em;
+	}
+	h2{
+		font-weight: 900;
+		font-size: 4.6rem;
+		margin-bottom: 4rem;
+	}
+}
 
-// .share-icons{
-// 	display: none;
-// 	@media (min-width: #{$tablet-width}){
-// 		display: inline-block;
-// 		list-style: none;
-// 		font-size: 2.5rem;
-// 		line-height: 1.5;
-// 		position: absolute;
-// 		top: 45%;
-// 		right: 20px;
-// 		li{
-// 			a{
-// 				color: white;
-// 				text-decoration: none;
-// 				&:hover{
-// 					color: $primary-color;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+.btn-theme{
+	background: transparent;
+	box-shadow: none;
+	font-weight: 600;
+	font-size: 1.5rem;
+	border: 0.2rem solid white;
+	&:hover{
+		background: white;
+		color: black;
+		transition: all 0.5s ease-in-out;
+	}
+}
 
+.share-icons{
+	display: none;
+	@media (min-width: #{$tablet-width}){
+		display: inline-block;
+		list-style: none;
+		font-size: 2.5rem;
+		line-height: 1.5;
+		position: absolute;
+		top: 45%;
+		right: 20px;
+		li{
+			a{
+				color: white;
+				text-decoration: none;
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+//ankush css
 .land-section-2{
   background: #39b54a;
   color: white;
@@ -127,4 +130,4 @@
 .aos.doanime{
   top: 0 !important;
   opacity: 1 !important;
-}
+} 
