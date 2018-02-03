@@ -104,4 +104,5 @@ $(document).ready(function(){
 
     };
     clSlickSlider();
+
 });
