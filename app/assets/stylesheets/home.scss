@@ -6,6 +6,18 @@
 
 $front-section-height: 950px;
 
+html{
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+
+.bold{
+	font-weight: bold;
+}
+
 .overlay{
 	position: absolute;
 	top: 0;
@@ -37,7 +49,6 @@ $front-section-height: 950px;
     background-attachment: fixed;
     background-position: fill;
     background-size: cover;
-    filter: blur(100%) 
 }
 
 .navbar.navbar-transparent{
@@ -71,9 +82,11 @@ $front-section-height: 950px;
 	padding-top: 5%;
 	position: relative;
 	.intro-small-heading{
+		font-family: 'Montserrat', sans-serif;
 		font-size: 2em;
 	}
 	h2{
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 900;
 		font-size: 4.6rem;
 		margin-bottom: 4rem;
@@ -130,4 +143,35 @@ $front-section-height: 950px;
 .aos.doanime{
   top: 0 !important;
   opacity: 1 !important;
-} 
+}
+
+.section-content-2{
+	.section-head-2{
+		h1{
+			font-size: 5em;
+			font-weight: bold;
+		}
+	}
+}
+.stats_count{
+	font-size: 6em;
+}
+.stats_heading{
+	font-weight: bold;
+	color: $primary-text-color;
+	font-size: 1.5em;
+}
+
+.service-item-text{
+	font-family: 'Montserrat', sans-serif;
+	p{
+		color: $secondary-text-color;
+		font-size: 1.1em;
+	}
+}
+
+.service-icon{
+	color: $primary-color;
+	font-size: 3em;
+	margin: 20px auto;
+}

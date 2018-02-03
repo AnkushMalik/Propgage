@@ -15,4 +15,19 @@ $(document).ready(function(){
     $(".aos").inViewport(function(px){
         if(px) $(this).addClass("doanime") ;
     });
+
+    //for stats countet
+    $('.stats_count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+        
+    });
+
 });
