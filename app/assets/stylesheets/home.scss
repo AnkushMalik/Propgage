@@ -130,4 +130,9 @@ $front-section-height: 950px;
 .aos.doanime{
   top: 0 !important;
   opacity: 1 !important;
-} 
+}
+
+//deepak css
+.slick-dots li.slick-active button:before{
+	color: green !important;
+}
