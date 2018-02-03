@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  detail: MyText
+  interest: 9.99
+  post: one
+  user: one
+
+two:
+  description: MyText
+  detail: MyText
+  interest: 9.99
+  post: two
+  user: two
