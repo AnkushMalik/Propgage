@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180203145101) do
+ActiveRecord::Schema.define(version: 20180203160953) do
 
   create_table "bids", force: :cascade do |t|
     t.text "description"
@@ -57,6 +57,10 @@ ActiveRecord::Schema.define(version: 20180203145101) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.string "phnum"
+    t.string "dp_file_name"
+    t.string "dp_content_type"
+    t.integer "dp_file_size"
+    t.datetime "dp_updated_at"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
