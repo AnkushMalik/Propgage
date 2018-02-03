@@ -1,12 +1,8 @@
 
 <div class="container-fluid" style="padding: 0; background: linear-gradient(to bottom right, #2dbe60, #4ca2d2cd);">
-
   <%= render "home/navbar" %>
-
   <div class="container" style="height: 100%; width: 100%; margin-bottom: 30px">
     <div class="row" style="height: 100%; width: 100%; display: flex">
-
-
       <div class="col-md-5" style="margin: auto">
         <div class="card">
           <div class="card-body">
@@ -27,13 +23,13 @@
                 <div class="col-md-12">
                   <div class="field form-group label-floating">
                     <%= f.label :name, :class => 'control-label'  %><br />
-                    <%= f.email_field :name, autofocus: true, autocomplete: "email", :class => 'form-control'%>
+                    <%= f.text_field :name, autofocus: true, autocomplete: "email", :class => 'form-control'%>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="field form-group label-floating">
                     <%= f.label :phnum, :class => 'control-label'  %><br />
-                    <%= f.email_field :phnum, autofocus: true, autocomplete: "email", :class => 'form-control'%>
+                    <%= f.number_field :phnum, autofocus: true, autocomplete: "email", :class => 'form-control'%>
                   </div>
                 </div>
                 <div class="col-md-12">
