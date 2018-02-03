@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="02724960-9be4-43f2-89b5-1ba3c91e993c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +21,7 @@
       <file leaf-file-name="land.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/land.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="1890">
               <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#section#1;n#!!top" expanded="true" />
@@ -98,57 +97,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.scss">
+      <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="242" column="1" lean-forward="false" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
+            <state relative-caret-position="1026">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
-                <marker date="1517681679796" expanded="true" signature="255:298" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="347:370" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="380:609" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="506:531" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="549:574" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="624:972" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="694:719" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="737:762" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1000:1348" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1017:1085" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1034:1082" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1102:1346" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1114:1152" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1120:1148" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1158:1343" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1215:1339" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1356:1596" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1418:1481" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1485:1594" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1608:1810" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1731:1808" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1824:2133" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="1879:2131" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2020:2128" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2026:2124" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2084:2119" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2163:2205" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2219:2293" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2307:2356" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2376:2451" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2394:2449" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2400:2446" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2465:2485" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2500:2571" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2591:2693" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2635:2691" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2708:2772" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2872:3102" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="2990:3100" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="3115:3136" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="3152:3178" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="3212:3484" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="3650:4161" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="4057:4159" ph="{...}" />
-                <marker date="1517681679796" expanded="true" signature="4173:4331" ph="{...}" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,8 +117,8 @@
       <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="162">
+              <caret line="36" column="68" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -167,22 +127,22 @@
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#3069#3075#0" expanded="true" />
-                <element signature="e#3075#3081#0" expanded="true" />
+                <element signature="e#3065#3071#0" expanded="true" />
+                <element signature="e#3071#3077#0" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#3283#3289#0" expanded="true" />
-                <element signature="e#3289#3295#0" expanded="true" />
+                <element signature="e#3279#3285#0" expanded="true" />
+                <element signature="e#3285#3291#0" expanded="true" />
                 <element signature="n#style#0;n#div#8;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+      <file leaf-file-name="home.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="935">
+              <caret line="242" column="1" lean-forward="false" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -269,6 +229,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
       </list>
     </option>
   </component>
@@ -405,12 +366,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517656090693</updated>
-      <workItem from="1517656094501" duration="17753000" />
+      <workItem from="1517656094501" duration="20934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17753000" />
+    <option name="totallyTimeSpent" value="20934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -509,63 +470,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="112" lean-forward="false" selection-start-line="7" selection-start-column="112" selection-end-line="7" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="242" column="1" lean-forward="false" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
-          <folding>
-            <marker date="1517681679796" expanded="true" signature="255:298" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="347:370" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="380:609" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="506:531" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="549:574" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="624:972" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="694:719" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="737:762" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1000:1348" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1017:1085" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1034:1082" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1102:1346" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1114:1152" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1120:1148" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1158:1343" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1215:1339" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1356:1596" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1418:1481" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1485:1594" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1608:1810" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1731:1808" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1824:2133" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="1879:2131" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2020:2128" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2026:2124" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2084:2119" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2163:2205" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2219:2293" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2307:2356" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2376:2451" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2394:2449" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2400:2446" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2465:2485" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2500:2571" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2591:2693" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2635:2691" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2708:2772" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2872:3102" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="2990:3100" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="3115:3136" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="3152:3178" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="3212:3484" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="3650:4161" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="4057:4159" ph="{...}" />
-            <marker date="1517681679796" expanded="true" signature="4173:4331" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/land.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="1890">
           <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#section#1;n#!!top" expanded="true" />
@@ -640,26 +571,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="112" lean-forward="false" selection-start-line="7" selection-start-column="112" selection-end-line="7" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        <state relative-caret-position="162">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="162">
+          <caret line="36" column="68" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -668,21 +591,28 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#3069#3075#0" expanded="true" />
-            <element signature="e#3075#3081#0" expanded="true" />
+            <element signature="e#3065#3071#0" expanded="true" />
+            <element signature="e#3071#3077#0" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#3283#3289#0" expanded="true" />
-            <element signature="e#3289#3295#0" expanded="true" />
+            <element signature="e#3279#3285#0" expanded="true" />
+            <element signature="e#3285#3291#0" expanded="true" />
             <element signature="n#style#0;n#div#8;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="1026">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
