@@ -10,9 +10,11 @@
 
 .img-cover{
 	background: linear-gradient(to bottom right, $primary-color, $primary-color-dark);
-	height: 200px;
+	height: 300px;
 	margin-bottom: 30px;
 	.img-profile{
+		position: relative;
+		top: 70px;
 		height: 200px;
 		width: 200px;
 		margin: auto;
