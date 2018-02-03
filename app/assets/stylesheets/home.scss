@@ -238,3 +238,18 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     	transition: border-bottom 0.5s ease-in-out;
     }
 }
+
+#mc-email {
+    width: 100%;
+    height: 5rem;
+    background-size: 24px 16px, auto;
+    border: none;
+    margin-bottom: 1.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+//deepak css
+.slick-dots li.slick-active button:before{
+	color: green !important;
+}
+
