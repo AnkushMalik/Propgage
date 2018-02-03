@@ -130,7 +130,8 @@ $front-section-height: 950px;
 .aos.doanime{
   top: 0 !important;
   opacity: 1 !important;
-} 
+
+}
 
 // Divyansh
 
@@ -201,4 +202,9 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     border: none;
     margin-bottom: 1.8rem;
     color: rgba(255, 255, 255, 0.5);
+}
+
+//deepak css
+.slick-dots li.slick-active button:before{
+	color: green !important;
 }
