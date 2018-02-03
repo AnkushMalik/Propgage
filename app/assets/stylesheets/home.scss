@@ -112,3 +112,19 @@
 // 		}
 // 	}
 // }
+
+.land-section-2{
+  background: #39b54a;
+  color: white;
+}
+.aos.fadeinup{
+  transition: 1s ease;
+  position: relative;
+  top: 30px;
+  opacity: 0
+}
+
+.aos.doanime{
+  top: 0 !important;
+  opacity: 1 !important;
+}
