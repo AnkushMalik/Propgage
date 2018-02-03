@@ -15,8 +15,11 @@
  *= require_self
  */
 
+
 /*import goes here*/
 @import "partials/palette";
 @import "partials/mixins";
+@import 'slick';
 
 @import "home";
+
