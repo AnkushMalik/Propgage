@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180203160953) do
+ActiveRecord::Schema.define(version: 20180203180441) do
 
   create_table "bids", force: :cascade do |t|
     t.text "description"
@@ -22,6 +22,17 @@ ActiveRecord::Schema.define(version: 20180203160953) do
     t.datetime "updated_at", null: false
     t.index ["post_id"], name: "index_bids_on_post_id"
     t.index ["user_id"], name: "index_bids_on_user_id"
+  end
+
+  create_table "pictures", force: :cascade do |t|
+    t.integer "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "pic_file_name"
+    t.string "pic_content_type"
+    t.integer "pic_file_size"
+    t.datetime "pic_updated_at"
+    t.index ["post_id"], name: "index_pictures_on_post_id"
   end
 
   create_table "posts", force: :cascade do |t|

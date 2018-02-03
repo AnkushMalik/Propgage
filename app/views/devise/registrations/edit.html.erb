@@ -1,43 +1,83 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<div class="container-fluid" style="padding: 0; background: linear-gradient(to bottom right, #2dbe60, #4ca2d2cd);">
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="container" style="height: 100%; width: 100%; margin-bottom: 30px">
+    <div class="row" style="height: 100%; width: 100%; display: flex">
+
+
+      <div class="col-md-5" style="margin: auto">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <h2 class="text-center">Edit <%= resource_name.to_s.humanize %></h2>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="padding: 0 25px 0 25px">
+                <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+                <%= devise_error_messages! %>
+
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :email, :class => 'control-label' %><br />
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'form-control' %>
+                  </div>
+                </div>
+
+                <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+                <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+                <% end %>
+
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :name, :class => 'control-label'  %><br />
+                    <%= f.text_field :name, autofocus: true, autocomplete: "email", :class => 'form-control'%>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :phnum, :class => 'control-label'  %><br />
+                    <%= f.number_field :phnum, autofocus: true, autocomplete: "email", :class => 'form-control'%>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :password, :class => 'control-label' %> <br />
+                    <%= f.password_field :password, autocomplete: "off", :class => 'form-control' %>
+                    <% if @minimum_password_length %>
+                    <br />
+                    <% end %>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :password_confirmation, :class => 'control-label' %><br />
+                    <%= f.password_field :password_confirmation, autocomplete: "off", :class => 'form-control' %>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :current_password, :class => 'control-label'%><br />
+                    <%= f.password_field :current_password, autocomplete: "off", :class => 'form-control' %>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="actions text-center" style="margin-bottom: 15px;margin-top: 17px">
+                    <%= f.submit "Update", :class => 'col-md-12 btn btn-primary'%>
+                  </div>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %>
-  </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
 
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>
