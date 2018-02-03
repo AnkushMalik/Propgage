@@ -17,6 +17,12 @@
         <div class="input-field">
                 <%= f.input :description, :label_html => { :class => 'active' } %>
         </div>
+        <div class="control-group">
+          <%= f.label :pictures, class: "control-label" %>
+          <div class="controls">
+            <%= file_field_tag "pics[]", type: :file, multiple: true %>
+          </div>
+        </div>
         <div class="input-field">
                 <%= f.input :tag_id, as: :select, placeholder:"what relates to your post the most?", collection: Tag.all%>
         </div>
