@@ -1,29 +1,73 @@
-<h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<div class="container-fluid" style="padding: 0; background: linear-gradient(to bottom right, #2dbe60, #4ca2d2cd);">
+  <%= render "home/navbar" %>
+  <div class="container" style="height: 100%; width: 100%; margin-bottom: 30px">
+    <div class="row" style="height: 100%; width: 100%; display: flex">
+      <div class="col-md-5" style="margin: auto">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <h2 class="text-center">Sign up</h2>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="padding: 0 25px 0 25px">
+                <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :email, :class => 'control-label' %><br />
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'form-control'%>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :name, :class => 'control-label'  %><br />
+                    <%= f.text_field :name, autofocus: true, autocomplete: "email", :class => 'form-control'%>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :phnum, :class => 'control-label'  %><br />
+                    <%= f.number_field :phnum, autofocus: true, autocomplete: "email", :class => 'form-control'%>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :password, :class => 'control-label'%>
+                    <% if @minimum_password_length %>
+                    <% end %><br />
+                    <%= f.password_field :password, autocomplete: "off", autocomplete: "email", :class => 'form-control' %>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="field form-group label-floating">
+                    <%= f.label :password_confirmation, :class => 'control-label' %><br />
+                    <%= f.password_field :password_confirmation, autocomplete: "off", autocomplete: "email", :class => 'form-control' %>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="actions text-center" style="margin-bottom: 15px;margin-top: 17px">
+                    <%= f.submit "Sign up", :class => 'col-md-12 btn btn-primary'%>
+                  </div>
+                  <% end %>
+                </div>
+                <div class="col-md-6">
+                  <a href="" class="btn btn-default full-width" style="background: #4267B2;"><span class="fa fa-facebook"></span>&nbsp;&nbsp;Facebook</a>
+                </div>
+                <div class="col-md-6">
+                  <a href="" class="btn btn-default full-width" style="background: #C82C26;"><span class="fa fa-google"></span>&nbsp;&nbsp;Google</a>
+                </div>
+                <div class="text-center" style="margin-top: 20px">
+                  <%= render "devise/shared/links"%>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>
