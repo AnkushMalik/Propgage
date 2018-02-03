@@ -6,4 +6,7 @@ class HomeController < ApplicationController
   def land
     #code
   end
+  def profile
+    
+  end
 end

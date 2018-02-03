@@ -10,4 +10,5 @@ Rails.application.routes.draw do
     root to: 'home#feeds'
   end
 
+  get '/profile', to: 'home#profile'
 end
