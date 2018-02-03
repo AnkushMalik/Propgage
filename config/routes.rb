@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'home/index'
-  root 'home#index'
+
+  unauthenticated :user do
+    root to: 'home#land'
+  end
+
+  authenticated :user do
+    root to: 'home#feeds'
+  end
+
 end
