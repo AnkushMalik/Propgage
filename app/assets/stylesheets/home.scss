@@ -143,6 +143,7 @@ h1,h2,h3,h4,h5,h6{
 .aos.doanime{
   top: 0 !important;
   opacity: 1 !important;
+<<<<<<< HEAD
 }
 
 .section-content-2{
@@ -175,6 +176,9 @@ h1,h2,h3,h4,h5,h6{
 	color: $primary-color;
 	font-size: 3em;
 	margin: 20px auto;
+=======
+
+>>>>>>> 8b30f2af93be182f5225289122fcd3e08c10bb13
 }
 
 // Divyansh
@@ -238,3 +242,18 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     	transition: border-bottom 0.5s ease-in-out;
     }
 }
+
+#mc-email {
+    width: 100%;
+    height: 5rem;
+    background-size: 24px 16px, auto;
+    border: none;
+    margin-bottom: 1.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+//deepak css
+.slick-dots li.slick-active button:before{
+	color: green !important;
+}
+
