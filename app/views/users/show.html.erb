@@ -62,6 +62,7 @@
 							<div class="tab-pane" id="stats">
 								<div class="card">
 									<div class="content" style="padding: 20px;">
+										<%= line_chart @user.posts.group_by_minute(:created_at).count %>
 										 <!-- line_chart (User.bids.pluck(:created_at) + User.post.pluck(:created_at)).group_by_day(:created_at).count -->
 									</div>
 								</div>
