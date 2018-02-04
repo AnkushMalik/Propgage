@@ -12,6 +12,14 @@
 
   <body>
     <% if user_signed_in? %>
+      <style>
+        body{
+          background-image: url("http://thepecul.com/assets/imported/pecul_bck-8466763b55485ea18f5bee2498df0cd748cff8be1be164f0dcd83c310c6b5eff.png");
+          background-repeat: repeat;
+          background-size: cover;
+          background-color: white;
+        }
+      </style>
       <%= render "shared/lunavbar" %>
     <% end %>
     <%= yield %>
