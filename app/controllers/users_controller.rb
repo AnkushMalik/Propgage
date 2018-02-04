@@ -1,10 +1,14 @@
 class UsersController < ApplicationController
-  before_action :set_user
+  before_action :set_user, only: :show
   before_action :authenticate_user!
 
   def show
     @post = @user.posts.all
     render
+  end
+
+  def index
+    @user = User.all
   end
 
   private
