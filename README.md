@@ -20,6 +20,10 @@
 * This will create a competition between the lenders.
 * Every lender will want to increase their business so they will compete
 
+## Video
+[![PropGage](https://img.youtube.com/vi/qFJOUQscpxo/0.jpg)](https://www.youtube.com/watch?v=qFJOUQscpxo)
+
+
 ## TO RUN
 
 ```
@@ -32,3 +36,12 @@ rake db:seed (only once)
 rails s
 xdg-open http://localhost:3000
 ```
+
+## Contributors
+
+* [Ankush Malik](https://github.com/AnkushMalik)
+* [Deepak Bansal](https://github.com/theWeboy)
+* [Shivam Kaushik](https://github.com/mythrex)
+* [Divyansh Jha](https://github.com/divyanshj16)
+
+> Result : We were rank #4 out of 70 teams in the competition
