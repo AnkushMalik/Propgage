@@ -29,7 +29,7 @@
 			</div> </div> </div>
 			
 			<!-- Feeds -->
-			<div class="col-md-6 col-sm-12">
+			<div class="col-md-8 col-sm-12">
 
 				<div class="card card-nav-tabs card-plain">
 					<div class="header header-primary">
@@ -54,7 +54,7 @@
 							<div class="tab-pane" id="stats">
 								<div class="card">
 									<div class="content" style="padding: 20px;">
-										 <!-- line_chart (User.bids.pluck(:created_at) + User.post.pluck(:created_at)).group_by_day(:created_at).count -->
+										 <%= line_chart User.group_by_day(:created_at).count %>
 									</div>
 								</div>
 							</div>
