@@ -9,7 +9,11 @@
 }
 
 .img-cover{
-	background: linear-gradient(to bottom right, $primary-color, $primary-color-dark);
+	background: url('https://goo.gl/GozbRR');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fill;
+    background-size: cover; 
 	height: 300px;
 	margin-bottom: 30px;
 	.img-profile{
