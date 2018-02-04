@@ -5,7 +5,7 @@
 
 			<h5 class="post-heading"><%= link_to post.user.name,user_path(post.user) %></h5>
 
-			<div class="post-expand"><a class="fa fa-ellipsis-h" href="#post"></a></div>
+			<div class="post-expand"><a class="fa fa-ellipsis-h" href="/posts/<%= post.id%>"></a></div>
 		</div>
 		<div class="row post-desc" style="text-align:left;font-weight:bold">
 			<%= post.title%>
