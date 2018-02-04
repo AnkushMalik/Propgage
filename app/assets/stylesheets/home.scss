@@ -261,3 +261,6 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 	color: green !important;
 }
 
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	width: 100%;
+}
