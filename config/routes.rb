@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'users/show'
 
   resources :posts
+  resources :bids
   devise_for :users
 
   unauthenticated :user do

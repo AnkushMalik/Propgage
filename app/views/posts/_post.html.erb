@@ -3,7 +3,7 @@
 		<div class="row" style="display: flex;">
 			<%=image_tag post.user.dp.url(:thumb),class: "post-img-thumb"%>
 
-			<h5 class="post-heading"><%= post.user.name%></h5>
+			<h5 class="post-heading"><%= link_to post.user.name,user_path(post.user) %></h5>
 
 			<div class="post-expand"><a class="fa fa-ellipsis-h" href="#post"></a></div>
 		</div>
@@ -63,7 +63,7 @@
 			<div class="post-btn-group btn-group" role="group" aria-label="Basic example">
 				<p id="ctcb" style="display: none">http://localhost:3000/posts/<%=post.id%></p>
 				<button type="button" class="btn btn-info"><span class="fa fa-eye"></span> 434</button>
-			  <button type="button" class="btn btn-primary"><i class="fa fa-inr"></i> bids (<%= post.bids.size %>)</button>
+				<%= link_to 'Bids', post_path(post), class: "btn btn-primary" %>
 			  <button type="button" onclick="copyToClipboard('#ctcb')" class="btn btn-secondary"><i class="fa fa-share-alt"></i>&nbsp; Clipboard</button>
 			</div>
 		</div>
