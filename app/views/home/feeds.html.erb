@@ -1,4 +1,28 @@
 <div class="container" style="margin-top: 100px;margin-bottom: 60px ">
+  <div class="row">
+    <div class="col-md-7">
+      <%= simple_form_for Post.create do |f| %>
+        <div class="input-field">
+                <%= f.input :title %>
+        </div>
+        <div class="input-field">
+                <%= f.input :description,:input_html => {:class => "materialize-textarea wysiwyg_textarea" } %>
+        </div>
+        <p>Images of your asset : </p>
+        <div class="control-group">
+          <%= f.label :pictures, class: "control-label" %>
+          <div class="controls">
+            <%= file_field_tag "pics[]", type: :file, multiple: true %>
+          </div>
+        </div>
+        <div class="input-field">
+                <%= f.input :tag_id, as: :select, placeholder:"what relates to your post the most?", collection: Tag.all%>
+        </div>
+        <%= hidden_field_tag(:status, true) %>
+        <%= f.button :submit,:value=>"post!",:class=>"btn right"%>
+      <% end %>
+    </div>
+  </div>
     <div class="row">
         <div class="col-md-7">
             <!-- post -->
