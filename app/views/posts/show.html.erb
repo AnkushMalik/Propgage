@@ -120,17 +120,23 @@
   
   <div class="col-md-2"></div>
   <div class="col-md-8">
-    <div class="card">
-      <div class="content">
-        <% if @post.bids.size != 0%>
-          <% @post.bids.each do |f| %>
-          <%= f.user.name %>
+    <% if @post.bids.size != 0%>
+    <% @post.bids.each do |f| %>
+      <div class="card">
+        <div class="content" style="padding: 30px">
+          <div style="font-size: 2em;">
+            <%= link_to f.user.name %>
+          </div>  
           <br>
-          <%= f.detail %>
-          <%= f.description %>
-          <%= f.interest.to_s %>
-          <br>
-          ------------------
+          <div class="row">
+            <div class="col-xs-8">
+             <h3> <%= f.detail %> </h3>
+              <p class="text-muted"><%= f.description %></p>
+            </div>
+            <div class="col-xs-4">
+              <p><span class="text-danger" style="font-size: 2em;"><%= f.interest.to_s %></span> % p.a</p>
+            </div>
+          </div>
         <% end %> 
         <% else %>
           be the first one to bid here !
