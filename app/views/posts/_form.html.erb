@@ -11,20 +11,24 @@
                 </div>
         <% end %>
 
-        <div class="input-field">
-                <%= f.input :title ,:label_html => { :class => 'active'}%>
+        <div class="card card-nav-tabs">
+            <div class="content">
+                <div class="input-field form-group label-floating">
+                        <%= f.input :title , :class => 'form-control',:label_html => { :class => 'active control-label'}%>
+                </div>
+                <div class="input-field form-group label-floating">
+                        <%= f.input :description, :class => 'form-control',:label_html => { :class => 'active control-label' } %>
+                </div>
+                <div class="control-group">
+                  <%= f.label :pictures, class: "control-label" %>
+                  <div class="controls">
+                    <%= file_field_tag "pics[]", type: :file, multiple: true %>
+                  </div>
+                </div>
+                <div class="input-field">
+                        <%= f.input :tag_id, as: :select, placeholder:"what relates to your post the most?", collection: Tag.all, :class => 'btn btn-primary'%>
+                </div>
+                <%= f.button :submit ,:value=>"Post",:class=>"btn right"%>
+            </div>
         </div>
-        <div class="input-field">
-                <%= f.input :description, :label_html => { :class => 'active' } %>
-        </div>
-        <div class="control-group">
-          <%= f.label :pictures, class: "control-label" %>
-          <div class="controls">
-            <%= file_field_tag "pics[]", type: :file, multiple: true %>
-          </div>
-        </div>
-        <div class="input-field">
-                <%= f.input :tag_id, as: :select, placeholder:"what relates to your post the most?", collection: Tag.all%>
-        </div>
-        <%= f.button :submit ,:value=>"Post",:class=>"btn right"%>
 <% end %>
