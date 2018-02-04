@@ -1,29 +1,86 @@
-<p id="notice"><%= notice %></p>
+<div class="container" style="margin-top: 100px;margin-bottom: 60px ">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="card post" style="margin-bottom: 30px">
+        <div class="content">
+          <div class="row" style="display: flex;">
+            <%=image_tag @post.user.dp.url(:thumb),class: "post-img-thumb"%>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+            <h5 class="post-heading"><%= @post.user.name%></h5>
 
-<p>
-  <strong>Description:</strong>
-  <%= @post.description %>
-</p>
+            <div class="post-expand"><a class="fa fa-ellipsis-h" href="#post"></a></div>
+          </div>
+          <div class="row post-desc" style="text-align:left;font-weight:bold">
+            <%= @post.title%>
+          </div>
+          <div class="row post-desc" style="text-align:left">
+            <%= @post.description%>
+            <p>
+              <span class="label label-warning"><%= Tag.find(@post.tag_id).name %></span>
+            </p>
+          </div>
 
-<p>
-  <strong>Tag:</strong>
-  <%= @post.tag %>
-</p>
+          <div class="row">
+            <!-- carousel -->
+            <div id="post-carousel" class="carousel slide" data-ride="carousel">
 
-<p>
-  <strong>User:</strong>
-  <%= @post.user %>
-</p>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
 
-<p>
-  <strong>Status:</strong>
-  <%= @post.status %>
-</p>
+                <div class="item active">
+                  <img src="https://goo.gl/tXMxsv" alt="...">
+                  <div class="carousel-caption">
+                  </div>
+                </div>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+                <div class="item">
+                  <img src="https://goo.gl/GdJDGv" alt="...">
+                  <div class="carousel-caption">
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Controls -->
+              <a href="#post-carousel" class="left carousel-control" data-slide="prev">
+                      <span class="icon-prev fa-stack fa-lg" style="font-size: 3em; font-weight: bold; position: relative; left: -20%;">
+                          <!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
+                          <i class="fa fa-angle-left"></i>
+                      </span>
+              </a>
+              <a href="#post-carousel" class="right carousel-control" data-slide="next">
+                      <span class="icon-next fa-stack fa-lg" style="font-size: 3em; font-weight: bold; position: relative; right: -20%;">
+                          <!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
+                          <i class="fa fa-angle-right"></i>
+                      </span>
+              </a>
+            </div>
+
+
+          </div>
+          <script>
+              function copyToClipboard(element) {
+                  var $temp = $("<input>");
+                  $("body").append($temp);
+                  $temp.val($(element).text()).select();
+                  document.execCommand("copy");
+                  $temp.remove();
+              }
+          </script>
+
+          <div class="row">
+            <div class="post-btn-group btn-group" role="group" aria-label="Basic example">
+              <p id="ctcb" style="display: none">http://localhost:3000/posts/<%=@post.id%></p>
+              <button type="button" class="btn btn-info"><span class="fa fa-eye"></span> 434</button>
+              <button type="button" class="btn btn-primary"><i class="fa fa-inr"></i> bids (<%= @post.bids.size %>)</button>
+              <button type="button" onclick="copyToClipboard('#ctcb')" class="btn btn-secondary"><i class="fa fa-share-alt"></i>&nbsp; Clipboard</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+
+  </div>
+</div>
