@@ -23,9 +23,12 @@
 ## TO RUN
 
 ```
-install ruby
-install rails
+sudo apt install ruby
+sudo apt install rvm
+rvm install rails
 bundle install
 rake db:migrate
+rake db:seed (only once)
 rails s
+xdg-open http://localhost:3000
 ```
