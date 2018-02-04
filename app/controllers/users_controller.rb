@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
 
   def show
+    @post = @user.posts.all
     render
   end
 
