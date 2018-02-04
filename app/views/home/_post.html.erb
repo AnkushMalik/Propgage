@@ -1,9 +1,8 @@
 <div class="card post">
 	<div class="content">
 		<div class="row" style="display: flex;">
-			<%=image_tag @user.dp.url(:thumb),class: "post-img-thumb"%>
-
-			<h5 class="post-heading"><%= post.user.name%></h5>
+			<img src="http://via.placeholder.com/40x40" alt="post-img-thumb" class="post-img-thumb">
+			
 			<div class="post-heading" style="display: block; flex: 11;">
 				<h5 style="margin-bottom: 5px;">Ankush Malik</h5>
 				<p>
@@ -12,19 +11,16 @@
 					<span class="label label-danger">Automobile</span>
 				</p>
 			</div>
-
+			
 			<div class="post-expand"><a class="fa fa-ellipsis-h" href="#post"></a></div>
 		</div>
-		<div class="row post-desc" style="text-align:left;font-weight:bold">
-			<%= post.title%>
-		</div>
-		<div class="row post-desc" style="text-align:left">
-			<%= post.description%>
+		<div class="row post-desc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eos enim tempore temporibus, at repellendus.
 		</div>
 
 		<div class="row">
 			<!-- carousel -->
-			<%= render '/posts/carousel' %>
+			<%= render 'posts/carousel' %>
 
 		</div>
 		<script>
@@ -39,11 +35,11 @@
 
 		<div class="row">
 			<div class="post-btn-group btn-group" role="group" aria-label="Basic example">
-				<p id="ctcb" style="display: none">http://localhost:3000/posts/<%=post.id%></p>
+				<p id="ctcb" style="display: none">http://www.thepecul.com/</p>
 				<button type="button" class="btn btn-info"><span class="fa fa-eye"></span> 434</button>
-			  <button type="button" class="btn btn-primary"><i class="fa fa-inr"></i> bids (<%= post.bids.size %>)</button>
-			  <button type="button" onclick="copyToClipboard('#ctcb')" class="btn btn-secondary"><i class="fa fa-share-alt"></i>&nbsp; Clipboard</button>
+			  <button type="button" class="btn btn-primary"><i class="fa fa-inr"></i> bid</button>
+			  <button type="button" onclick="copyToClipboard('#ctcb')" class="btn btn-secondary"><i class="fa fa-share-alt"></i> Share</button>
 			</div>
 		</div>
 	</div>
-</div>
+</div>	
