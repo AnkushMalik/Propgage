@@ -7,7 +7,7 @@
           <div class="row" style="display: flex;">
             <%=image_tag @post.user.dp.url(:thumb),class: "post-img-thumb"%>
 
-            <h5 class="post-heading"><%= @post.user.name%></h5>
+            <h5 class="post-heading"><%= link_to @post.user.name,user_path(@post.user) %></h5>
 
             <div class="post-expand"><a class="fa fa-ellipsis-h" href="#post"></a></div>
           </div>
