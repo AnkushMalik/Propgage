@@ -19,40 +19,34 @@
 
 		<div class="row">
 			<!-- carousel -->
-			<div id="post-carousel" class="carousel slide" data-ride="carousel">
-
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
-
-			    <div class="item active">
-			      <img src="https://goo.gl/tXMxsv" alt="...">
-			      <div class="carousel-caption">
-			      </div>
-			    </div>
-
-			    <div class="item">
-			      <img src="https://goo.gl/GdJDGv" alt="...">
-			      <div class="carousel-caption">
-			      </div>
-			    </div>
-
-			  </div>
-
-			  <!-- Controls -->
-			  <a href="#post-carousel" class="left carousel-control" data-slide="prev">
-			      <span class="icon-prev fa-stack fa-lg" style="font-size: 3em; font-weight: bold; position: relative; left: -20%;">
-			          <!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
-			          <i class="fa fa-angle-left"></i>
-			      </span>
-			  </a>
-			  <a href="#post-carousel" class="right carousel-control" data-slide="next">
-			      <span class="icon-next fa-stack fa-lg" style="font-size: 3em; font-weight: bold; position: relative; right: -20%;">
-			          <!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
-			          <i class="fa fa-angle-right"></i>
-			      </span>
-			  </a>
-			</div>
-
+			<% if post.pictures.size!=0 %>
+				<div id="post-carousel-<%=post.id %>" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<% post.pictures.each_with_index do |pic, i|%>
+									<!-- Wrapper for slides -->
+									<%if i == 0 %>
+											<div class="item active">
+									<% else %>
+											<div class="item">
+									<% end %>
+											<%=image_tag pic.pic.url() %>
+										</div>
+							<% end %>
+						</div>
+					<a href="#post-carousel-<%=post.id %>" class="left carousel-control" data-slide="prev">
+				      <span class="icon-prev fa-stack fa-lg" style="font-size: 3em; font-weight: bold; position: relative; left: -20%;">
+				          <!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
+				          <i class="fa fa-angle-left"></i>
+				      </span>
+				  </a>
+				  <a href="#post-carousel-<%=post.id %>" class="right carousel-control" data-slide="next">
+				      <span class="icon-next fa-stack fa-lg" style="font-size: 3em; font-weight: bold; position: relative; right: -20%;">
+				          <!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
+				          <i class="fa fa-angle-right"></i>
+				      </span>
+				  </a>
+				</div>
+			<% end %>
 
 		</div>
 		<script>
