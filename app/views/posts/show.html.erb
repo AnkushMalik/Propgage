@@ -73,20 +73,43 @@
             </div>
           </div>
         </div>
-        <div style="padding:10px;">
-          <%= simple_form_for Bid.create do |f| %>
-            <div class="input-field">
-                    <%= f.input :detail %>
-            </div>
-            <div class="input-field">
-                    <%= f.input :description %>
-            </div>
-            <div class="input-field">
-                    <%= f.input :interest %>
-            </div>
-            <%= hidden_field_tag(:post_id, @post.id) %>
-            <%= f.button :submit,:value=>"Bid!!",:class=>"btn right"%>
-          <% end %>
+
+        <div class="col-xs-12">
+          <button id="bid-toggle" class="btn btn-info">
+            <span class="fa fa-angle-down"> Add Bid </span>
+          </button>
+
+          <div id="bid-form" style="padding:10px;">
+            <%= simple_form_for Bid.create do |f| %>
+              <div class="input-field">
+                      <%= f.input :detail, :placeholder => "Add details of your bid" %>
+              </div>
+              <div class="input-field">
+                      <%= f.input :description, :placeholder => "Additional info(if needed)" %>
+              </div>
+              <div class="input-field">
+                      <%= f.input :interest%>
+              </div>
+              <%= hidden_field_tag(:post_id, @post.id) %>
+              <%= f.button :submit,:value=>"Bid!!",:class=>"btn btn-primary right"%>
+            <% end %>
+          </div>
+
+          <script>
+           var hidden = 1;
+           $('#bid-form').hide();
+           $('#bid-toggle').click(function(event) {
+             if(hidden){
+              $('#bid-form').show(400);
+              hidden = 0;
+             }else{
+              $('#bid-form').hide(400);
+              hidden = 1;
+             }
+           });             
+          </script>
+          
+          
 
         </div>
       </div>
@@ -94,4 +117,26 @@
     <div class="col-md-2"></div>
 
   </div>
+  
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="content">
+        <% if @post.bids.size != 0%>
+          <% @post.bids.each do |f| %>
+          <%= f.user.name %>
+          <br>
+          <%= f.detail %>
+          <%= f.description %>
+          <%= f.interest.to_s %>
+          <br>
+          ------------------
+        <% end %> 
+        <% else %>
+          be the first one to bid here !
+        <% end %>
+      </div>
+    </div>
+  </div>
+
 </div>
