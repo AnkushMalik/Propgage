@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   authenticated :user do
     root to: 'home#feeds'
-    resources :users, only: [:show]
+    resources :users, only: [:show, :index]
   end
 
 end

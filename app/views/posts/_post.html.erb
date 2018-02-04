@@ -1,9 +1,9 @@
-<div class="card post">
+<div class="card post" style="margin-bottom: 30px">
 	<div class="content">
 		<div class="row" style="display: flex;">
 			<%=image_tag post.user.dp.url(:thumb),class: "post-img-thumb"%>
 
-			<h5 class="post-heading"><%= post.user.name%></h5>	
+			<h5 class="post-heading"><%= post.user.name%></h5>
 
 			<div class="post-expand"><a class="fa fa-ellipsis-h" href="#post"></a></div>
 		</div>
@@ -13,7 +13,7 @@
 		<div class="row post-desc" style="text-align:left">
 			<%= post.description%>
 			<p>
-				<span class="label label-warning">Jewellery</span>
+				<span class="label label-warning"><%= Tag.find(post.tag_id).name %></span>
 			</p>
 		</div>
 
