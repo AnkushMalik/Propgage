@@ -3,8 +3,19 @@ class BidsController < ApplicationController
   before_action :authenticate_user!
 
   def create
-    @bid = @post.bids.create(params[:bid].permit(:description,:detail,:interest,:post_id,:user_id))
-    redirect_to post_path(@post)
+    @bid = @post.bids.create(params[:bid].permit(:description,:detail,:interest,:post_id))
+    @bid.user_id = current_user.id
+    puts '**********************************'
+    puts params
+    puts '**********************************'
+    puts @bid
+    puts '**********************************'
+    if @bid.save
+      redirect_to post_path(@post)
+    else
+      flash[:notice]= 'something went wrong'
+      redirect_to post_path(@post)
+    end
   end
   def destroy
     @bid = @post.bids.find(params[:id])
