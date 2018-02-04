@@ -5,11 +5,6 @@ class BidsController < ApplicationController
   def create
     @bid = @post.bids.create(params[:bid].permit(:description,:detail,:interest,:post_id))
     @bid.user_id = current_user.id
-    puts '**********************************'
-    puts params
-    puts '**********************************'
-    puts @bid
-    puts '**********************************'
     if @bid.save
       redirect_to post_path(@post)
     else
