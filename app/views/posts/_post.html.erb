@@ -1,7 +1,7 @@
 <div class="card post">
 	<div class="content">
 		<div class="row" style="display: flex;">
-			<%=image_tag @user.dp.url(:thumb),class: "post-img-thumb"%>
+			<%=image_tag post.user.dp.url(:thumb),class: "post-img-thumb"%>
 
 			<h5 class="post-heading"><%= post.user.name%></h5>
 			<div class="post-heading" style="display: block; flex: 11;">
