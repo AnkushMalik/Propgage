@@ -2,6 +2,11 @@
 
 	<div class="row">
 		<div class="col-lg-12 img-cover">
+			<% if current_user.id == @user.id %>
+				<%= link_to edit_user_registration_path do %>
+				<span class="fa fa-cogs" style="background-color: #212529; font-size:3rem; color:ghostwhite; position:relative; top:20px; left:10px; border-radius:50%; padding:7px; "></span>
+				<% end %>
+			<% end %>
 			<div class="container">
 				<div class="col-md-4 col-sm-12 text-center">
 					<%=image_tag @user.dp.url(:sqimg),class: "img-profile"%>

@@ -3,8 +3,6 @@ Rails.application.routes.draw do
 
   get 'users/show'
 
-  get 'users/edit'
-
   resources :posts
   devise_for :users
 
@@ -14,7 +12,7 @@ Rails.application.routes.draw do
 
   authenticated :user do
     root to: 'home#feeds'
-    resources :users, only: [:show, :edit]
+    resources :users, only: [:show]
   end
 
   get '/profile', to: 'home#profile'
