@@ -3,15 +3,7 @@
 		<div class="row" style="display: flex;">
 			<%=image_tag @user.dp.url(:thumb),class: "post-img-thumb"%>
 
-			<h5 class="post-heading"><%= post.user.name%></h5>
-			<div class="post-heading" style="display: block; flex: 11;">
-				<h5 style="margin-bottom: 5px;">Ankush Malik</h5>
-				<p>
-					<span class="label label-warning">Jewellery</span>
-					<span class="label label-primary">Property</span>
-					<span class="label label-danger">Automobile</span>
-				</p>
-			</div>
+			<h5 class="post-heading"><%= post.user.name%></h5>	
 
 			<div class="post-expand"><a class="fa fa-ellipsis-h" href="#post"></a></div>
 		</div>
@@ -20,6 +12,11 @@
 		</div>
 		<div class="row post-desc" style="text-align:left">
 			<%= post.description%>
+			<p>
+				<span class="label label-warning">Jewellery</span>
+				<span class="label label-primary">Property</span>
+				<span class="label label-danger">Automobile</span>
+			</p>
 		</div>
 
 		<div class="row">
