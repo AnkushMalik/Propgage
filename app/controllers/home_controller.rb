@@ -8,6 +8,5 @@ class HomeController < ApplicationController
     #code
   end
   def profile
-    
   end
 end

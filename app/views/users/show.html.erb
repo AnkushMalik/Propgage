@@ -2,6 +2,11 @@
 
 	<div class="row">
 		<div class="col-lg-12 img-cover">
+			<% if current_user.id == @user.id %>
+				<%= link_to edit_user_registration_path do %>
+				<span class="fa fa-cogs" style="background-color: #212529; font-size:3rem; color:ghostwhite; position:relative; top:20px; left:10px; border-radius:50%; padding:7px; "></span>
+				<% end %>
+			<% end %>
 			<div class="container">
 				<div class="col-md-4 col-sm-12 text-center">
 					<%=image_tag @user.dp.url(:sqimg),class: "img-profile"%>
@@ -21,9 +26,9 @@
 				 		<h3 class="text-center text-primary"><%= @user.name%></h3>
 				 		<ul class ="info-sidebar">
 				 			<li> <span class="fa fa-briefcase"></span> Works as <span class="text-primary">Business man</span></li>
-				 			<li><span class="fa fa- home"></span> lives at <span class="text-primary">Delhi</span></li>
-				 			<li><span class="fa fa-star"></span> Contc. No. <span class="text-primary"> +91-<%= @user.phnum %></span></li>
-							<li><span class="fa fa-star"></span> Email <span class="text-primary"> <%= @user.email %></span></li>
+				 			<li><span class="fa fa-home"></span> lives at <span class="text-primary">Delhi</span></li>
+				 			<li><span class="fa fa-phone"></span> Contc. No. <span class="text-primary"> +91-<%= @user.phnum %></span></li>
+							<li><span class="fa fa-envelope"></span> Email <span class="text-primary"> <%= @user.email %></span></li>
 						</ul>
 					</div>
 				</div>
