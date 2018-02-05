@@ -27,9 +27,8 @@
 ## TO RUN
 
 ```
-sudo apt install ruby
-sudo apt install rvm
-rvm install rails
+*install ruby*
+gem install rails
 bundle install
 rake db:migrate
 rake db:seed (only once)
